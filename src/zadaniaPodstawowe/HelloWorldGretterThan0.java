@@ -11,14 +11,14 @@ public class HelloWorldGretterThan0 {
         System.out.print("Podaj liczbę :");
         int liczba;
         do {
-            if(sc.hasNextInt()) {
+            if(sc.hasNextInt() ) {
                 liczba = sc.nextInt();
                 if (liczba > 0) {
                     System.out.println("Hello World");
                 }
             } else {
-                System.out.println("To nie jest liczba");
-                liczba = 0;
+                System.out.println("Złe dane");
+                break;
             }
         }while(liczba > 0);
         System.out.println("Koniec zabawy");

@@ -14,7 +14,7 @@ public class SwitchFun {
         String c = inputy.next();
         switch(c){
             case "/":
-             double wynikDzielenia = a/b;
+             double wynikDzielenia = (double)a/(double)b;
              System.out.println("Wynik Twojego dzialania to: " + wynikDzielenia);
              break;
             case "*":

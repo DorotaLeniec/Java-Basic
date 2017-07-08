@@ -27,6 +27,9 @@ public class Tablica {
         }
 
         System.out.println("______________Przyklad d ____________");
+        for(int a:array){
+            System.out.println(a);
+        }
 
     }
 }
