@@ -8,6 +8,7 @@ public class ze {
 //        System.out.println(getGretterNumber(3,10.0));
 //        System.out.println(getGretterNumber(1500,20,500));
         System.out.println(minArray(1,2,3,4,5,6,7,8,1));
+        System.out.println(minArray());
         System.out.println(minArray(1111,2,30,4,59,6,7,8,100));
         System.out.println(minArray(1111,2,30,4,595555,6888,0,700000000,8,1009999999));
 //        System.out.println(max());
@@ -26,6 +27,9 @@ public class ze {
     }
 
     static double minArray(int... arr){
+        if(arr.length == 0 ){
+            throw new IllegalArgumentException("Array is empty");
+        }
             double result = arr[0];
             for (int i = 0; i < arr.length; i++) {
               result =  min(result,arr[i]);
@@ -34,6 +38,7 @@ public class ze {
     }
 
     static int findIndex(int a, int[] arr){
+
         int index = -1;
         for(int i=0;i<arr.length;i++){
             if(arr[i]==a) {

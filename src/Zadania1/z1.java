@@ -6,14 +6,14 @@ package Zadania1;
 public class z1 {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,2};
-        System.out.println(getSum(arr));
+        System.out.println(getSum(1,2,3));
         System.out.println(getAverage(arr));
         System.out.println(getProduct(arr));
         System.out.println(getStrong(10));
         getSumaCiaguAr();
     }
 
-    public static int getSum(int[] arr){
+    public static int getSum(int... arr){
         int suma = 0;
         for(int a : arr){
             suma+=a;
